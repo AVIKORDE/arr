@@ -1,0 +1,50 @@
+package kkk;
+
+import java.util.Scanner;
+
+public class addarray {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter rows");
+		int rows=sc.nextInt();
+		System.out.println("Enter column");
+		int col=sc.nextInt();
+		int[][] a=new int[rows][col];
+		System.out.println("First array");
+		System.out.println("enter element");
+		for (int i=0;i<rows;i++) {
+			for (int j=0;j<col;j++) {
+				a[i][j]=sc.nextInt();
+			}
+		}
+		int[][] b=new int[rows][col];
+		System.out.println("second array");
+		System.out.println("enter element");
+		for (int i=0;i<rows;i++) {
+			for (int j=0;j<col;j++) {
+				b[i][j]=sc.nextInt();
+			}
+		}
+		
+		int[][] c=new int[rows][col];
+		System.out.println("final result");
+		for (int i=0;i<rows;i++) {
+			for (int j=0;j<col;j++) {
+				c[i][j]=a[i][j]+b[i][j];
+		
+			}
+		}
+		for (int i=0;i<rows;i++) {
+			
+			for (int j=0;j<col;j++) {
+				System.out.print(c[i][j] +" ");
+			}
+			System.out.println();
+		}
+			
+		
+
+	}
+
+}
