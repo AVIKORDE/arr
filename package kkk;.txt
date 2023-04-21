@@ -1,0 +1,30 @@
+package kkk;
+import java.util.*;
+public class arr {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int size=sc.nextInt();
+		int sum=0;
+		int[] no=new int [size];
+		//for loop for inpur
+		for(int i=0;i<size;i++)
+		{
+			no[i]=sc.nextInt();
+		
+		}
+		for(int i=0;i<size;i++) {
+			System.out.println(no[i]);
+		}
+		System.out.println("even no");
+		for (int i=0;i<size;i++ ) {
+		if(no[i]%2==0)
+		{
+		sum=sum+no[i];
+		}
+		}
+		System.out.println(sum);
+
+	}
+
+}
