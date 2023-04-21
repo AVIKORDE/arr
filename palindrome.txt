@@ -1,0 +1,23 @@
+	public static void main(String[] args) { 
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enter the number");
+		int a= sc.nextInt();
+		int b = a;
+		int rev=0;
+		int rem;
+		do {
+			rem=a%10;
+			rev=(rev*10)+rem;
+			a=a/10;
+		}while(a>0);
+			if (rev==b)
+			{
+				System.out.println("Palidrome no");
+			}
+			else {
+				System.out.println("not palondrom");
+			}// TODO Auto-generated method stub
+
+	}
+
+}
