@@ -1,0 +1,45 @@
+package kkk;
+
+import java.util.Scanner;
+
+public class Twodayarray {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter rows");
+		int rows=sc.nextInt();
+		System.out.println("Enter column");
+		int col=sc.nextInt();
+		int[][] no=new int[rows][col];
+		System.out.println("enter element");
+		for (int i=0;i<rows;i++) {
+			for (int j=0;j<col;j++) {
+				no[i][j]=sc.nextInt();
+			}
+		}
+		for (int i=0;i<rows;i++) {
+			for (int j=0;j<col;j++) {
+				System.out.print(no[i][j]);
+			}
+			System.out.println();
+		}
+		for (int i=0;i<rows;i++) {
+			for (int j=0;j<col;j++) {
+				if (no[i][j]%2!=0) {
+					System.out.print(no[i][j]);
+				}
+				else {
+					System.out.print(0);
+
+			}
+	
+		}
+			System.out.println();
+		}
+	
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
